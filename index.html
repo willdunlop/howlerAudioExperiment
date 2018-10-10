@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Audio Experiment</title>
+
+    <link rel="stylesheet" href="style.css"></link>
+  </head>
+  <body style="margin: 0">
+
+      <div id="container">
+        <div id="dragHeader" class="container__header">Audio Experiment</div>
+        <div class="container__body">
+
+            <div class="container__controls">
+                <div class="container__active-track">Currently Playing: <span id="activeTrack"></span></div>
+                <div class="container__progress">
+                    <!-- <span id="currentTime">0:00</span> -->
+                    <progress id="audioProgress" value="0" max="100"></progress>
+                    <!-- <span id="totalTime">0:00</span> -->
+
+                </div>
+                <div class="container__controls-btns">
+                    <button id="play" class="container__btn">Play</button>
+                    <button id="pause" class="container__btn">Pause</button>
+                    <button id="switch" class="container__btn">Switch Tracks</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.15/howler.min.js"></script>
+    <script type="text/javascript" src="./dragger.js"></script>
+    <script type="text/javascript" src="/main.js"></script>
+
+    </body>
+</html>
